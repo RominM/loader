@@ -1,5 +1,6 @@
-$grey: rgba(0, 0, 0, .5);
-$blue: rgba(0, 0, 255, .5);
+$pink: rgb(252, 0, 197);
+$purple: rgb(162, 0, 255);
+$blue: #0000ff;
 
 @keyframes rotate {
 	0% {
@@ -16,7 +17,7 @@ $blue: rgba(0, 0, 255, .5);
 @keyframes rotate2 {
 	0% {
 		transform: rotate(0deg);
-		border-top-color: $grey;
+		border-top-color: $pink;
 	}
 	50% {
 		transform: rotate(180deg);
@@ -24,7 +25,7 @@ $blue: rgba(0, 0, 255, .5);
 	}
 	100% {
 		transform: rotate(360deg);
-		border-top-color: $grey;
+		border-top-color: $purple;
 	}
 }
 
@@ -43,12 +44,8 @@ h1, h3 {
 	text-align: center;
 	font-family: 'Tahoma';
 	font-weight: lighter;
-	color: $grey;
+	color: $pink;
 	letter-spacing: 1.5px;
-}
-
-h1 {
-	margin: 50px auto;
 }
 
 @mixin loaderDivMixin {
@@ -70,29 +67,6 @@ h1 {
 	}
 }
 
-/* loader 1 */
-.loader1, .loader1 div {
-	@include loaderDivMixin;
-	border-top-color: $grey;
-	border-bottom-color: $blue;
-}
-
-/*loader 2  */
-.loader2, .loader2 div {
-	@include loaderDivMixin;
-	border-top-color: $blue;
-	border-left-color: $grey;
-	border-right-color: $grey;
-}
-
-/*loader 3  */
-.loader3, .loader3 div {
-	@include loaderDivMixin;
-	border-top-color: $grey;
-	border-left-color: $blue;
-	animation-timing-function: cubic-bezier(.55, .38, .21, .88);
-	animation-duration: 3s;
-}
 
 /* loader 4 */
 .loader4, .loader4 div {

@@ -12,15 +12,15 @@
 @keyframes rotate2 {
   0% {
     transform: rotate(0deg);
-    border-top-color: rgba(0, 0, 0, 0.5);
+    border-top-color: #fc00c5;
   }
   50% {
     transform: rotate(180deg);
-    border-top-color: rgba(0, 0, 255, 0.5);
+    border-top-color: #0000ff;
   }
   100% {
     transform: rotate(360deg);
-    border-top-color: rgba(0, 0, 0, 0.5);
+    border-top-color: #a200ff;
   }
 }
 * {
@@ -38,12 +38,8 @@ h1, h3 {
   text-align: center;
   font-family: "Tahoma";
   font-weight: lighter;
-  color: rgba(0, 0, 0, 0.5);
+  color: #fc00c5;
   letter-spacing: 1.5px;
-}
-
-h1 {
-  margin: 50px auto;
 }
 
 .loader {
@@ -56,39 +52,6 @@ h1 {
 }
 .loader div {
   height: 100%;
-}
-
-/* loader 1 */
-.loader1, .loader1 div {
-  border-radius: 50%;
-  padding: 8px;
-  border: 2px solid transparent;
-  animation: rotate linear 3.5s infinite;
-  border-top-color: rgba(0, 0, 0, 0.5);
-  border-bottom-color: rgba(0, 0, 255, 0.5);
-}
-
-/*loader 2  */
-.loader2, .loader2 div {
-  border-radius: 50%;
-  padding: 8px;
-  border: 2px solid transparent;
-  animation: rotate linear 3.5s infinite;
-  border-top-color: rgba(0, 0, 255, 0.5);
-  border-left-color: rgba(0, 0, 0, 0.5);
-  border-right-color: rgba(0, 0, 0, 0.5);
-}
-
-/*loader 3  */
-.loader3, .loader3 div {
-  border-radius: 50%;
-  padding: 8px;
-  border: 2px solid transparent;
-  animation: rotate linear 3.5s infinite;
-  border-top-color: rgba(0, 0, 0, 0.5);
-  border-left-color: rgba(0, 0, 255, 0.5);
-  animation-timing-function: cubic-bezier(0.55, 0.38, 0.21, 0.88);
-  animation-duration: 3s;
 }
 
 /* loader 4 */
