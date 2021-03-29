@@ -27,21 +27,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #f9f9f9;
-  padding-bottom: 100px;
-}
-
-h1, h3 {
-  display: block;
-  margin: 0px auto;
-  text-align: center;
-  font-family: "Tahoma";
-  font-weight: lighter;
-  color: #fc00c5;
-  letter-spacing: 1.5px;
-}
-
 .loader {
   position: relative;
   margin: 75px auto;
@@ -63,10 +48,6 @@ h1, h3 {
   border-radius: 50%;
   padding: 4px;
   animation: rotate2 4s infinite linear;
-}
-
-div:hover {
-  animation-play-state: paused;
 }
 
 .loader, .loader * {
